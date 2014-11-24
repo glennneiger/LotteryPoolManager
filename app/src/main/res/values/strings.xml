@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Lottery Pool Manager</string>
+    <string name="action_settings">Settings</string>
+    <string name="how_many_tickets">How many tickets in the pool?</string>
+    <string name="drawing_date">"Drawing date: "</string>
+    <string name="welcome">Welcome to the Lottery Pool Manager</string>
+    <string name="you_can_add_more_tickets_at_any_time">You can add more tickets at any time</string>
+    <string name="submit">Submit</string>
+    <string name="add_tickets">Add Tickets</string>
+    
+
+</resources>

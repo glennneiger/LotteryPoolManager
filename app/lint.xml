@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<lint>
+    <issue id="SimpleDateFormat">
+        <ignore path="src/com/epichomeservices/powerballpoolmanager/EnterResultsMM.java" />
+        <ignore path="src/com/epichomeservices/powerballpoolmanager/EnterResultsPB.java" />
+    </issue>
+</lint>

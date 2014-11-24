@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+   
+    <TextView
+        android:id="@+id/gameLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="28dp"
+        android:text="@string/welcome"
+        android:textStyle="bold"
+        android:textSize="16sp" />
+    
+
+    <FrameLayout
+        android:id="@+id/frameLayout1"
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/gameLabel"
+        android:layout_marginTop="36dp"
+        android:background="@drawable/powerball_border" >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" >
+
+            <Button
+                android:id="@+id/powerballButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="22dp"
+                android:onClick="powerballSetup"
+                android:text="Enter Tickets" />
+
+            <Button
+                android:id="@id/checkWinnersButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_toRightOf="@+id/powerballButton"
+                android:onClick="checkPBResults"
+                android:text="Check Results" />
+
+        </RelativeLayout>
+
+    </FrameLayout>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/frameLayout1"
+        android:layout_marginTop="27dp"
+        android:background="@drawable/megamillions_border" >
+        
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" >
+
+            <Button
+                android:id="@+id/checkWinnersButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="25dp"
+                android:onClick="checkMMResults"
+                android:text="Check Results" />
+
+            <Button
+                android:id="@+id/megaMillionsButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_toLeftOf="@+id/checkWinnersButton"
+                android:onClick="megaMillionsSetup"
+                android:text="Enter Tickets" />
+
+        </RelativeLayout>
+    </FrameLayout>
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:orientation="vertical" >
+
+    </LinearLayout>
+
+</RelativeLayout>

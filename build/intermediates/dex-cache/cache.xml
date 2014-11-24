@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<pre-dex-items>
+
+    <item
+        dex="C:\Users\Michael\AndroidstudioProjects\LotteryPoolManager\app\build\intermediates\pre-dexed\debug\support-annotations-21.0.2-1c64ccff097cff7178ef381722ca9bc043496ed2.jar"
+        jar="C:\Users\Michael\AppData\Local\Android\android-studio\sdk\extras\android\m2repository\com\android\support\support-annotations\21.0.2\support-annotations-21.0.2.jar"
+        jumboMode="false"
+        revision="20.0.0"
+        sha1="99373741f99a0556ee293c41e8faa1ca3ae8a4e6"/>
+    <item
+        dex="C:\Users\Michael\AndroidstudioProjects\LotteryPoolManager\app\build\intermediates\pre-dexed\debug\classes-eb7e9c9d36085e5e8920a865abae20c4286e1b0d.jar"
+        jar="C:\Users\Michael\AndroidstudioProjects\LotteryPoolManager\app\build\intermediates\exploded-aar\com.google.android.gms\play-services\6.1.71\classes.jar"
+        jumboMode="false"
+        revision="20.0.0"
+        sha1="0f6d5c1ef2e982c3b7858408e3df389cf5d202da"/>
+    <item
+        dex="C:\Users\Michael\AndroidstudioProjects\LotteryPoolManager\app\build\intermediates\pre-dexed\debug\internal_impl-21.0.2-7d963d3662d0f1394c3c0386e42c058e7ee75023.jar"
+        jar="C:\Users\Michael\AndroidstudioProjects\LotteryPoolManager\app\build\intermediates\exploded-aar\com.android.support\support-v4\21.0.2\libs\internal_impl-21.0.2.jar"
+        jumboMode="false"
+        revision="20.0.0"
+        sha1="962e8b12569c56dbdcf8367eb4eac8bb129cd18f"/>
+    <item
+        dex="C:\Users\Michael\AndroidstudioProjects\LotteryPoolManager\app\build\intermediates\pre-dexed\debug\classes-810da5a70481fe6e163513f0f32666aee499c74e.jar"
+        jar="C:\Users\Michael\AndroidstudioProjects\LotteryPoolManager\app\build\intermediates\exploded-aar\com.android.support\support-v4\21.0.2\classes.jar"
+        jumboMode="false"
+        revision="20.0.0"
+        sha1="d1bf02de1c56d942e7a9d093b8610ba1ef4128e3"/>
+
+</pre-dex-items>

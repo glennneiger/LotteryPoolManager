@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <LinearLayout
+        android:id="@+id/linearLayout1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/gameLabel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linearLayout2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/linearLayout1"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="18dp" >
+
+        <TextView
+            android:id="@+id/textView1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="2"
+            android:text="Drawing Date: " />
+
+        <EditText
+            android:id="@+id/dateEditText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:focusable="false"
+            android:inputType="date" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linearLayout3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/linearLayout2"
+        android:layout_marginTop="20dp" >
+
+        <EditText
+            android:id="@+id/num1EditText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:maxLength="2"
+            android:hint="#1"
+            android:inputType="number" >
+        </EditText>
+
+        <EditText
+            android:id="@+id/num2EditText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:maxLength="2"
+            android:hint="#2"
+            android:inputType="number" >
+        </EditText>
+
+        <EditText
+            android:id="@+id/num3editText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:maxLength="2"
+            android:hint="#3"
+            android:inputType="number" >
+        </EditText>
+
+        <EditText
+            android:id="@+id/num4EditText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:maxLength="2"
+            android:hint="#4"
+            android:inputType="number" >
+        </EditText>
+
+        <EditText
+            android:id="@+id/num5EditText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:maxLength="2"
+            android:hint="#5"
+            android:inputType="number" >
+        </EditText>
+
+        <EditText
+            android:id="@+id/PbEditText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:maxLength="2"
+            android:inputType="number" >
+        </EditText>
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/checkWinnersButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/linearLayout3"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="22dp"
+        android:onClick="checkForWinners"
+        android:text="Check For Winners" />
+
+    <Button
+        android:id="@+id/latestResultsButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/checkWinnersButton"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="16dp"
+        android:onClick="parseLottoFeed"
+        android:text="Latest Results" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/latestResultsButton"
+        android:layout_centerHorizontal="true"
+        android:text="You can also manually enter date and numbers" />
+
+</RelativeLayout>

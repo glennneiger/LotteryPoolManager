@@ -1,0 +1,55 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/relativeLayoutMain"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    tools:context=".EnterTicketsPowerball" >
+
+<!-- above button added -->
+
+    <ScrollView
+        android:id="@+id/scrollView1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/powerballButton"
+        android:layout_alignBaseline="@+id/gameLabel"
+        android:layout_alignParentLeft="true"
+        android:layout_marginTop="21dp" >
+
+        <LinearLayout
+            android:id="@+id/linearLayout1"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentRight="true"
+            android:layout_below="@+id/TicketAmountsEditText" 
+            android:orientation="vertical" >
+        </LinearLayout>
+    </ScrollView>
+	<!-- Button was added -->
+    <Button
+        android:id="@+id/powerballButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="submitListener"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:text="Submit" />
+
+    <TextView
+        android:id="@+id/gameTitleTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:id="@+id/gameLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/gameTitleTextView"
+        android:layout_centerHorizontal="true"
+        android:text="Enter all ticket numbers below" />
+    
+</RelativeLayout>

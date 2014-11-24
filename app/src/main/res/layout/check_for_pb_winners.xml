@@ -1,0 +1,294 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <Button
+        android:id="@+id/backButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:onClick="backToSetup"
+        android:text="Back" />
+
+    <Button
+        android:id="@+id/emailButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:onClick="emailResults"
+        android:text="Email results" />
+
+    <TextView
+        android:id="@+id/gameLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/linearLayout1"
+        android:layout_marginTop="34dp"
+        android:text="The following tickets have winning combinations"
+        android:textAppearance="?android:attr/textAppearanceSmall" />
+
+    <LinearLayout
+        android:id="@+id/linearLayout1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="24dp" >
+
+        <TextView
+            android:id="@+id/winning1TextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:ems="2"
+            android:text="TextView" />
+
+        <TextView
+            android:id="@+id/winning2TextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:ems="2"
+            android:text="TextView" />
+
+        <TextView
+            android:id="@+id/winning3TextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:ems="2"
+            android:text="TextView" />
+
+        <TextView
+            android:id="@+id/winning4TextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:ems="2"
+            android:text="TextView" />
+
+        <TextView
+            android:id="@+id/winning5TextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:ems="2"
+            android:text="TextView" />
+
+        <TextView
+            android:id="@+id/winningPowerballTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:ems="2"
+            android:text="TextView" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/gameTitleTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:textStyle="bold"
+        android:text="Winning numbers for: "
+        android:textAppearance="?android:attr/textAppearanceSmall" />
+
+    <TextView
+        android:id="@+id/dateTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/emailButton"
+        android:layout_alignParentTop="true"
+        android:text="TextView" />
+
+    <ScrollView
+        android:id="@+id/scrollView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/backButton"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/gameLabel" >
+
+        <LinearLayout
+            android:id="@+id/linearLayout2"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical" >
+            
+            <TextView 
+                android:id="@+id/noWinnersTextView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:textStyle="bold" >
+                
+            </TextView>"
+            
+            <LinearLayout
+            android:id="@+id/fiveOfFiveWPBlinearLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+            
+                <TextView
+                    android:id="@+id/pb1TextView"
+                    android:paddingTop="10dp"
+                    android:text="5 of 5 with powerball"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textStyle="bold"
+                    android:gravity="center" />"
+              
+              </LinearLayout>  
+              
+            <LinearLayout
+            android:id="@+id/fiveOfFiveNoPBlinearLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+            
+                <TextView
+                    android:id="@+id/pb2TextView"
+                    android:text="5 of 5 no powerball"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingTop="8dp"
+                    android:textStyle="bold"
+                    android:gravity="center" />
+              
+            </LinearLayout>
+              
+            <LinearLayout
+            android:id="@+id/fourOfFiveWPBlinearLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+            
+                <TextView
+                    android:id="@+id/pb3TextView"
+                    android:text="4 of 5 with powerball"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingTop="8dp"
+                    android:textStyle="bold"
+                    android:gravity="center" />
+              
+            </LinearLayout>
+            
+            <LinearLayout
+            android:id="@+id/fourOfFiveNoPBlinearLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+            
+                <TextView
+                    android:id="@+id/pb4TextView"
+                    android:text="4 of 5 no powerball"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingTop="8dp"
+                    android:textStyle="bold"
+                    android:gravity="center" />
+              
+            </LinearLayout>
+            
+            <LinearLayout
+            android:id="@+id/threeOfFiveWPBlinearLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+            
+                <TextView
+                    android:id="@+id/pb5TextView"
+                    android:text="3 of 5 with powerball"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingTop="8dp"
+                    android:textStyle="bold"
+                    android:gravity="center" />
+              
+            </LinearLayout>
+            
+            <LinearLayout
+            android:id="@+id/threeOfFiveNoPBlinearLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+            
+                <TextView
+                    android:id="@+id/pb6TextView"
+                    android:text="3 of 5 no powerball"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingTop="8dp"
+                    android:textStyle="bold"
+                    android:gravity="center" />
+              
+            </LinearLayout>
+            
+            <LinearLayout
+            android:id="@+id/twoOfFiveWPBlinearLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+            
+                <TextView
+                    android:id="@+id/pb7TextView"
+                    android:text="2 of 5 with powerball"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingTop="8dp"
+                    android:textStyle="bold"
+                    android:gravity="center" />
+              
+            </LinearLayout>
+            
+            <LinearLayout
+            android:id="@+id/oneOfFiveWPBlinearLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+            
+                <TextView
+                    android:id="@+id/pb8TextView"
+                    android:text="1 of 5 with powerball"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingTop="8dp"
+                    android:textStyle="bold"
+                    android:gravity="center" />
+              
+            </LinearLayout>
+            
+            <LinearLayout
+            android:id="@+id/zeroOfFiveWPBlinearLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+            
+                <TextView
+                    android:id="@+id/pb9TextView"
+                    android:text="0 of 5 with powerball"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingTop="8dp"
+                    android:textStyle="bold"
+                    android:gravity="center" />
+              
+            </LinearLayout>
+            
+            
+            
+        </LinearLayout>
+             
+    </ScrollView>
+
+    
+
+</RelativeLayout>

@@ -1,0 +1,89 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/relativeLayoutMain"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".EnterTicketsPowerball" >
+
+    <EditText
+        android:id="@+id/drawDateEditText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/gameLabel"
+        android:layout_alignBottom="@+id/gameLabel"
+        android:layout_toRightOf="@+id/gameLabel"
+        android:ems="10"
+        android:inputType="date" >
+
+        <requestFocus />
+    </EditText>
+
+    <EditText
+        android:id="@+id/TicketAmountsEditText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/gameTitleTextView"
+        android:layout_alignBottom="@+id/gameTitleTextView"
+        android:layout_toRightOf="@+id/submitButton"
+        android:ems="10"
+        android:inputType="number" />
+
+    <TextView
+        android:id="@+id/gameLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_marginTop="31dp"
+        android:text="@string/drawing_date"
+        android:textSize="16sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/drawDateEditText"
+        android:layout_below="@+id/drawDateEditText"
+        android:layout_marginTop="23dp"
+        android:text="@string/add_tickets"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+    <TextView
+        android:id="@+id/gameTitleTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView4"
+        android:layout_marginTop="24dp"
+        android:layout_toLeftOf="@+id/TicketAmountsEditText"
+        android:text="@string/how_many_tickets" />
+
+    <Button
+        android:id="@+id/submitButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/TicketAmountsEditText"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="70dp"
+        android:onClick="ticketSetupSubmit"
+        android:text="@string/submit" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/TicketAmountsEditText"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="28dp"
+        android:text="@string/you_can_add_more_tickets_at_any_time" />
+
+    <TextView
+        android:id="@+id/textView6"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignTop="@+id/drawDateEditText"
+        android:gravity="center"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textStyle="bold" />
+
+</RelativeLayout>
